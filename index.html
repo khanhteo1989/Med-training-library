@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meddental-Library</title>
+  <style>
+    /* Cài đặt nền cho toàn bộ trang */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(
+        0deg,
+        rgba(225, 225, 0, 0.5),
+        rgba(0, 0, 255, 0.5)
+      ),
+      url('https://meddentalclinic.nl/wp-content/uploads/2022/11/LOGO-MEDDENTAL3-01-1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+    }
+
+    /* Tiêu đề chính */
+    h1 {
+      color: cornflowerblue;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Tiêu đề phụ */
+    h2 {
+      color: cornflowerblue;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Vùng chứa nội dung */
+    .content {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hình ảnh */
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Phong cách cho tiêu đề "HÀNH TRÌNH MEDDENTAL" */
+    .highlight-text {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      background: linear-gradient(90deg, cornflowerblue, #ff7f50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s infinite;
+      margin: 20px 0;
+    }
+
+    @keyframes shine {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 200%;
+      }
+    }
+
+    /* Danh sách khóa học */
+    ol {
+      padding-left: 40px;
+      font-size: 18px;
+    }
+
+    /* Hiệu ứng cho liên kết */
+    ol li {
+      margin: 10px 0;
+    }
+
+    ol li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    ol li a:hover {
+      color: white;
+      background-color: cornflowerblue;
+    }
+
+    /* Chân trang */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    footer img {
+      width: 150px;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Khóa Học</h1>
+    <p style="text-align: center;">20H SẢI BƯỚC BATCH CÙNG MEDDENTAL</p>
+
+    <!-- Logo -->
+    <img src="https://cdn-healthcare.hellohealthgroup.com/2022/10/1664765078_633a4c96341e61.83145296.jpg" alt="Ảnh logo">
+
+    <!-- Tiêu đề với hiệu ứng -->
+    <p class="highlight-text">HÀNH TRÌNH MEDDENTAL</p>
+
+    <!-- Video -->
+    <video controls width="100%" poster="https://via.placeholder.com/600x400.png?text=Hành+Trình+Meddental" style="margin: 20px 0; display: block;">
+      <source src="https://drive.google.com/uc?id=1v9vq8sheznpEdIyiggORlVRg9BFhn37j" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ phát video. Vui lòng <a href="https://drive.google.com/uc?id=1v9vq8sheznpEdIyiggORlVRg9BFhn37j">tải xuống video tại đây</a>.
+    </video>
+
+    <!-- Nội dung khóa học -->
+    <h2>Nội dung khóa học</h2>
+    <ol>
+      <li><a href="https://drive.google.com/file/d/1hA7I3qIVBPUr70X6sVoSKj4UTEtNZKrY/view?usp=sharing">Tài Liệu Chỉnh Nha</a></li>
+      <li><a href="https://drive.google.com/file/d/1sjTx5WBEqqv9x7KzKLDGRYOQVMgtdMaV/view?usp=sharing">Tài Liệu Implant</a></li>
+      <li><a href="https://drive.google.com/file/d/1FKMHr26I4-YtcwHR0u_TqaD0alWb2o7a/view?usp=sharing">Tài Liệu Răng Sứ</a></li>
+      <li><a href="https://drive.google.com/file/d/103wxa4aQb_rgsJAUltH5X7IlutrLOAuy/view?usp=sharing">Tài Liệu Nha Khoa Tổng Quát</a></li>
+      <li><a href="https://drive.google.com/file/d/1OH-KT7ciAfdqSDZYPqUoEcLocf7SOSop/view?usp=drive_link">Video Chỉnh Nha</a></li>
+      <li><a href="https://drive.google.com/file/d/108vcaiMGFTaPm6agB5_dYFgcC4ACRF1w/view?usp=drive_link">Video Nha Khoa Tổng Quát</a></li>
+      <li><a href="https://drive.google.com/file/d/1TYPi-YNScRMYRClq3oPj16EAgfyBzIhg/view?usp=drive_link">Video Implant</a></li>
+    </ol>
+  </div>
+
+  <!-- Chân trang -->
+  <footer>
+    <img src="mã.jpg" alt="Mã QR Zalo">
+    <p>Phone: 0337753515</p>
+    <p>&copy; 2024 Meddental. KhanhLee .</p>
+  </footer>
+</body>
+</html>
