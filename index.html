@@ -9,7 +9,7 @@
     /* Cài đặt nền cho toàn bộ trang */
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif; /* Sử dụng phông chữ đẹp */
+      font-family: 'Roboto', sans-serif;
       background-image: linear-gradient(
         0deg,
         rgba(225, 225, 0, 0.5),
@@ -27,17 +27,17 @@
     h1 {
       font-family: 'Oswald', sans-serif;
       color: cornflowerblue;
-      font-size: 70px; /* Tăng kích thước chữ */
+      font-size: 70px;
       text-align: center;
       font-weight: 900;
       margin-top: 20px;
-      text-shadow: 3px 3px 10px rgba(0, 0, 255, 0.5); /* Thêm bóng đổ cho chữ */
+      text-shadow: 3px 3px 10px rgba(0, 0, 255, 0.5);
     }
 
     /* Tiêu đề phụ */
     h2 {
       color: cornflowerblue;
-      font-size: 40px; /* Tăng kích thước chữ */
+      font-size: 40px;
       text-align: center;
       margin-top: 20px;
       font-weight: 700;
@@ -107,20 +107,20 @@
 
     /* Áp dụng hiệu ứng vào dòng chữ */
     .scroll-text {
-      font-size: 40px; /* Tăng kích thước chữ */
+      font-size: 40px;
       font-family: 'Oswald', sans-serif;
-      font-weight: 900; /* Đậm chữ */
+      font-weight: 900;
       color: #ffffff;
       background: linear-gradient(90deg, cornflowerblue, #ff7f50);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: scrollText 10s linear infinite, blinkText 1.5s step-end infinite;
+      animation: scrollText 30s linear infinite, blinkText 1.5s step-end infinite;
       white-space: nowrap;
       overflow: hidden;
       display: inline-block;
       padding-left: 100%;
       text-align: center;
-      text-shadow: 3px 3px 10px rgba(0, 0, 255, 0.6); /* Thêm bóng đổ */
+      text-shadow: 3px 3px 10px rgba(0, 0, 255, 0.6);
     }
 
     /* Danh sách khóa học */
@@ -166,6 +166,27 @@
       margin: 5px 0;
       font-size: 18px;
     }
+
+    /* Nút "ĐẶT LỊCH" ở góc dưới bên phải */
+    .schedule-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff7f50;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    /* Hiệu ứng khi hover vào nút */
+    .schedule-button:hover {
+      background-color: #e67e22;
+    }
   </style>
 </head>
 <body>
@@ -199,12 +220,13 @@
   </div>
 
   <!-- Chân trang -->
- <footer>
-  <!-- Chèn mã QR Zalo từ Google Drive -->
-  <img src="https://drive.google.com/uc?export=view&id=1LlWO7JaK0AXyTIBIRkFmN1-tAoQkdY02" alt="Mã QR Zalo" style="width: 150px; height: auto;">
-  <p>Phone: 0337753515</p>
-  <p>&copy; 2024 Meddental. KhanhLee.</p>
-</footer>
+  <footer>
+    <img src="https://drive.google.com/uc?export=view&id=1LlWO7JaK0AXyTIBIRkFmN1-tAoQkdY02" alt="Mã QR Zalo" style="width: 150px; height: auto;">
+    <p>Phone: 0337753515</p>
+    <p>&copy; 2024 Meddental. KhanhLee.</p>
+  </footer>
 
+  <!-- Nút Đặt Lịch -->
+  <button class="schedule-button" onclick="window.location.href='https://forms.gle/YOUR_GOOGLE_FORM_LINK'">ĐẶT LỊCH</button>
 </body>
 </html>
