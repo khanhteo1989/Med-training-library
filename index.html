@@ -78,6 +78,42 @@
       }
     }
 
+    /* Hiệu ứng chạy cho dòng chữ */
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Hiệu ứng nhấp nháy */
+    @keyframes blinkText {
+      0%, 50%, 100% {
+        opacity: 1;
+      }
+      25%, 75% {
+        opacity: 0;
+      }
+    }
+
+    /* Áp dụng hiệu ứng vào dòng chữ */
+    .scroll-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      background: linear-gradient(90deg, cornflowerblue, #ff7f50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: scrollText 10s linear infinite, blinkText 1.5s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      padding-left: 100%;
+      text-align: center;
+    }
+
     /* Danh sách khóa học */
     ol {
       padding-left: 40px;
@@ -126,9 +162,9 @@
 <body>
   <div class="content">
     <h1>Khóa Học</h1>
-    <!-- Tiêu đề với hiệu ứng nhấp nháy và chạy -->
-<p class="scroll-text">20H SẢI BƯỚC BATCH CÙNG MEDDENTAL</p>
 
+    <!-- Tiêu đề với hiệu ứng nhấp nháy và chạy -->
+    <p class="scroll-text">20H SẢI BƯỚC BATCH CÙNG MEDDENTAL</p>
 
     <!-- Logo -->
     <img src="https://cdn-healthcare.hellohealthgroup.com/2022/10/1664765078_633a4c96341e61.83145296.jpg" alt="Ảnh logo">
@@ -150,18 +186,15 @@
       <li><a href="https://drive.google.com/file/d/1OH-KT7ciAfdqSDZYPqUoEcLocf7SOSop/view?usp=drive_link">Video Chỉnh Nha</a></li>
       <li><a href="https://drive.google.com/file/d/108vcaiMGFTaPm6agB5_dYFgcC4ACRF1w/view?usp=drive_link">Video Nha Khoa Tổng Quát</a></li>
       <li><a href="https://drive.google.com/file/d/1TYPi-YNScRMYRClq3oPj16EAgfyBzIhg/view?usp=drive_link">Video Implant</a></li>
-      
     </ol>
   </div>
 
   <!-- Chân trang -->
- <footer>
-  <!-- Chèn mã QR Zalo từ Google Drive -->
-  <img src="https://drive.google.com/uc?export=view&id=1LlWO7JaK0AXyTIBIRkFmN1-tAoQkdY02" alt="Mã QR Zalo" style="width: 150px; height: auto;">
-  <p>Phone: 0337753515</p>
-  <p>&copy; 2024 Meddental. KhanhLee.</p>
-</footer>
-
-
+  <footer>
+    <!-- Chèn mã QR Zalo từ Google Drive -->
+    <img src="https://drive.google.com/uc?export=view&id=1LlWO7JaK0AXyTIBIRkFmN1-tAoQkdY02" alt="Mã QR Zalo" style="width: 150px; height: auto;">
+    <p>Phone: 0337753515</p>
+    <p>&copy; 2024 Meddental. KhanhLee.</p>
+  </footer>
 </body>
 </html>
