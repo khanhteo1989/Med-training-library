@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meddental-Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
     /* Cài đặt nền cho toàn bộ trang */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif; /* Sử dụng phông chữ đẹp */
       background-image: linear-gradient(
         0deg,
         rgba(225, 225, 0, 0.5),
@@ -24,18 +25,22 @@
 
     /* Tiêu đề chính */
     h1 {
+      font-family: 'Oswald', sans-serif;
       color: cornflowerblue;
-      font-size: 50px;
+      font-size: 70px; /* Tăng kích thước chữ */
       text-align: center;
+      font-weight: 900;
       margin-top: 20px;
+      text-shadow: 3px 3px 10px rgba(0, 0, 255, 0.5); /* Thêm bóng đổ cho chữ */
     }
 
     /* Tiêu đề phụ */
     h2 {
       color: cornflowerblue;
-      font-size: 30px;
+      font-size: 40px; /* Tăng kích thước chữ */
       text-align: center;
       margin-top: 20px;
+      font-weight: 700;
     }
 
     /* Vùng chứa nội dung */
@@ -58,8 +63,9 @@
 
     /* Phong cách cho tiêu đề "HÀNH TRÌNH MEDDENTAL" */
     .highlight-text {
-      font-size: 24px;
-      font-weight: bold;
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
       text-align: center;
       color: #ffffff;
       background: linear-gradient(90deg, cornflowerblue, #ff7f50);
@@ -67,6 +73,7 @@
       -webkit-text-fill-color: transparent;
       animation: shine 3s infinite;
       margin: 20px 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 255, 0.4);
     }
 
     @keyframes shine {
@@ -100,8 +107,9 @@
 
     /* Áp dụng hiệu ứng vào dòng chữ */
     .scroll-text {
-      font-size: 24px;
-      font-weight: bold;
+      font-size: 40px; /* Tăng kích thước chữ */
+      font-family: 'Oswald', sans-serif;
+      font-weight: 900; /* Đậm chữ */
       color: #ffffff;
       background: linear-gradient(90deg, cornflowerblue, #ff7f50);
       -webkit-background-clip: text;
@@ -112,6 +120,7 @@
       display: inline-block;
       padding-left: 100%;
       text-align: center;
+      text-shadow: 3px 3px 10px rgba(0, 0, 255, 0.6); /* Thêm bóng đổ */
     }
 
     /* Danh sách khóa học */
@@ -190,11 +199,12 @@
   </div>
 
   <!-- Chân trang -->
-  <footer>
-    <!-- Chèn mã QR Zalo từ Google Drive -->
-    <img src="https://drive.google.com/uc?export=view&id=1LlWO7JaK0AXyTIBIRkFmN1-tAoQkdY02" alt="Mã QR Zalo" style="width: 150px; height: auto;">
-    <p>Phone: 0337753515</p>
-    <p>&copy; 2024 Meddental. KhanhLee.</p>
-  </footer>
+ <footer>
+  <!-- Chèn mã QR Zalo từ Google Drive -->
+  <img src="https://drive.google.com/uc?export=view&id=1LlWO7JaK0AXyTIBIRkFmN1-tAoQkdY02" alt="Mã QR Zalo" style="width: 150px; height: auto;">
+  <p>Phone: 0337753515</p>
+  <p>&copy; 2024 Meddental. KhanhLee.</p>
+</footer>
+
 </body>
 </html>
